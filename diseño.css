@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -56,8 +59,9 @@ main {
 }
 
 .presentacion img {
-    width: auto;
+    width: 100%;
     height: auto;
+    max-width: 500px;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -79,10 +83,11 @@ footer ul {
 
 
 footer img {
-    display: block;
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin-top: 20px;
+    
+   
 }
 main a {
     display: block;
@@ -92,4 +97,51 @@ main a {
 
 main a:hover {
     color: #cfdff6;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .presentacion {
+        padding: 15px;
+    }
+
+    .presentacion h2 {
+        font-size: 22px;
+    }
+
+    .presentacion p {
+        font-size: 16px;
+        
+    }
+
+    .presentacion img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    footer img {
+        width: 100%;
+        height: auto;
+    }
 }
